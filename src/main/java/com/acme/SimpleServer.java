@@ -52,8 +52,8 @@ public class SimpleServer
         public void channelRead(ChannelHandlerContext ctx,
                                 Object msg) {
             ByteBuf in = (ByteBuf) msg;
-            System.out.println("got Message: " + in.toString(CharsetUtil.UTF_8));
-            ctx.write("Server Response ==>>"+in);
+            System.out.println("Got Message: " + in.toString(CharsetUtil.UTF_8));
+            ctx.write(in);
         }
 
         @Override
