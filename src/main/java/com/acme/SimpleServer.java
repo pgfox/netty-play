@@ -12,6 +12,10 @@ import io.netty.util.CharsetUtil;
 
 import java.net.InetSocketAddress;
 
+/*
+Simple client that starts a server on port 51515
+ */
+
 public class SimpleServer
 {
     public static void main( String[] args ) throws Exception
